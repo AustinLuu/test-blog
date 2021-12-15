@@ -1,0 +1,33 @@
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
+import Date from '../components/date'
+import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import About from '../components/About'
+import Projects from '../components/Projects'
+import Timeline from '../components/Timeline'
+import Footer from '../components/Footer'
+import Script from 'next/script'
+
+const title = 'Portfolio – Austin Luu';
+
+export default function Home() {
+  return (
+    
+    <div className='App'>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <div id="root"></div><canvas id="canvas"></canvas>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <Projects/>
+      <Timeline/>
+      <Footer/>
+    <Script src="../static/script.js" />
+    </div>
+  )
+}
