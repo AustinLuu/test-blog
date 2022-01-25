@@ -8,12 +8,15 @@ const About = () => {
                     <br/>
                     <p>In my spare time, you can find me power lifting at the gym, shooting mediocre photos, or at your local beach playing volleyball! Recently, I've started a podcast on which I plan to talk more about some of my thoughts on tech and general musings about the world.</p>
                     <br/>
-                    <p>
-                        Feel free to download my <a target="_blank" rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2021_M_V1.pdf">mechanical</a> or <a target="_blank" rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2021_C_V1.pdf">software</a> resume,
-                        poke around <a target="_blank" rel="noopener noreferrer" href="https://github.com/AustinLuu">my GitHub</a>, or
-                        contact me for a chat at <a target="_blank" rel="noopener noreferrer"href="mailto:austinowenluu@gmail.com">austinowenluu@gmail.com</a>. I'm always happy to meet new people!
-                    </p>
+                    <p>Feel free to download my resumes:</p>
+                    <ul className='sub-nav' style ={{display: "flex",flexDirection: "column",padding:"0.5em 0em 0em 1em",fontSize: "initial"}}>
+                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2022_R.pdf">/data science</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2022_R.pdf">/robotics</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2022_R.pdf">/software</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2022_R.pdf">/mechanical</a></li>
+                    </ul>
                     <img className="gh-chart" src="https://ghchart.rshah.org/austinluu" alt="austinluu's Github chart"/>
+                    <br/>
                 </div>
 
                 <div className = 'img-container lt-flex-40' style={{paddingBottom:"12vh"}}>

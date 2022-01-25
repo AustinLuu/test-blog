@@ -92,7 +92,7 @@ const Projects = () => {
                 {text: 'Google Maps API'}
             ],
             github: 'https://github.com/AustinLuu/rukpop',
-            website: 'http://rukpop.com/index.html',
+            website: 'https://ruk-pop.weebly.com/',
         },
         {
             title: 'Parallel Drone Swam',
@@ -172,7 +172,8 @@ const Projects = () => {
             brief: 'the thing you\'re on right now',
             description: 'Decided my portfolio needed an upgrade. Built this website using a variety of tools I was interested in learning at the time including React, Chakra UI, SASS, and AOS. Yep, surprisingly this is my first React website!',
             tools: [
-                {text: 'React'},
+                {text: 'React.js'},
+                {text: 'Next.js'},
                 {text: 'Chakra UI'},
                 {text: 'JavaScript'},
                 {text: 'styled-components'},

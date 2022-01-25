@@ -19,6 +19,8 @@ export default function Home() {
     <div className='App'>
       <Head>
         <title>{title}</title>
+        <meta name="description" content="Austin Luu - Portfolio" />
+        <link rel="icon" href="static/images/logo.png" />
       </Head>
       <div id="root"></div><canvas id="canvas"></canvas>
       <Navbar/>
