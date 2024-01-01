@@ -11,18 +11,57 @@ const TIMELINE_ELEMENTS = [
 
     //timeline events i.e., experiences
         {
+            year: 2024,
+            items:[
+                {
+                    title: 'Software Development Engineer @ ViTAA Medical',
+                    text: 'Developing an in-house ML/AI infastructure...',
+                },
+            ]
+        },
+        {
+            year: 2023,
+            items:[
+                {
+                    title: 'Software Development Engineer @ ViTAA Medical',
+                    text: 'Planned and implemented software architecture and infastructure overhauls. Introducing parallel computing and automated CI/CD integration pipelines reducing product and testing run times by 30% and 43% respectively.\n\nLed development and implementation of a 3D cardiovascular auto-segmentation algorithm in PyTorch leveraging MONAI and NIfTI libraries, resulting in a 92.84% Dice and 27% time reduction in QA personnel manual adjustments.\n\nLeading all development, implementation, and management of cybsersecurity tools.',
+                },
+                {
+                    title: 'Founder @ August Technologies Inc.',
+                    text: 'Freelance web development for small businesses.',
+                },
+            ]
+        },
+        {
+            year: 2022,
+            items:[
+                {
+                    title: 'Jr. Software Development Engineer @ ViTAA Medical',
+                    text: 'Established and implemented comprehensive coding standards incorporating microservice principles resulting in a 15% improvement in deployment flexibility and resource utilization.',
+                },
+                {
+                    title: 'Sr. Analyst @ CIBC',
+                    text: 'Led internal process consulting for $50M business banking product transformation.',
+                },
+                {
+                    title: 'Data Analyst @ TOHacks',
+                    text: 'Leveraged Python, Seaborn, and Pandas to clean, visualize, and analyze prior years’ user submission data, guiding data-drive design & business decisions, improving user submissions, and increasing registrations by 84% & user engagement by 23%.\n\nConducted A/B testing to assess the impact of various design decisions, resulting in a 20% increase in user conversion.',
+                }
+            ]
+        },
+        {
             year: 2021,
             items:[
                 {
                     title: 'Process Engineer @ AlphaPoly',
-                    text: 'Developing sustainable packaging solutions to reduce GHG emissions for plastic converting.',
+                    text: 'Developed sustainable packaging solutions to reduce GHG emissions for plastic converting.',
                 },
                 {
                     title: 'Product Data Analyst @ Celestica',
-                    text: 'Developing a feed forward neural network for predicting electrical component pricing based on description.',
+                    text: 'Analyzed $5+ million in customer portfolios utilizing SQL, Tableau, and PowerBI to uncover demonetized products and assess effects of commodity price fluctuations',
                 },
                 {
-                    title: 'URC Mechanical Science Co-lead @ Ryerson Rams Robotics',
+                    title: 'URC Mechanical Science Lead @ Ryerson Rams Robotics',
                     text: 'Designed and manufactured autonomous science console for life detection on mars.',
                 }
             ]
@@ -36,29 +75,12 @@ const TIMELINE_ELEMENTS = [
                 },
                 {
                     title: 'Product Data Analyst Intern @ Celestica',
-                    text: 'Coordinated Aerospace & Defense value engineering cost savings projects. Reducing excess inventory by over 20% and expanding customer AVL portfolio by over 15%, leading to annual cost savings of $1.5 million.',
+                    text: 'Coordinated Aerospace & Defense value engineering cost savings projects. Reducing excess inventory by over 20% and expanding customer AVL portfolio by over 15%, leading to annual cost savings of $1.5M.',
                 },
                 {
                     title: 'URC Chassis Lead @ Ryerson Rams Robotics',
-                    text: 'Piloted development and evaluation of dynamic and static force model simulations in MATLAB for mechanical analysis and redesign, increasing drive train structural integrity by over 35%.',
+                    text: 'Piloted development and evaluation of dynamic and static force model simulations in MATLAB for mechanical analysis and redesign, increasing drive train structural integrity by over 35%. Developed VBA macros for consolidating and analyzing: team performance metric reports and customer BOMs for product management.',
                 }
-            ]
-        },
-        {
-            year: 2019,
-            items:[
-                // {
-                //     title: 'Lead Web Developer @ RU K-POP',
-                //     text: '',
-                // },
-                {
-                    title: 'Product Data Analyst Intern @ Celestica',
-                    text: 'Developed VBA macros for consolidating and analyzing: team performance metric reports and customer BOMs for product management.',
-                }//,
-                // {
-                //     title: 'Lead Web Developer @ Ryerson Rams Robotics',
-                //     text: '',
-                // }
             ]
         },
 ];
@@ -76,7 +98,7 @@ const Timeline = () => {
                     {ele.items.map(desc=>
                         <div key ={desc.title} value={desc.title} className ='event'>
                             <h3>{desc.title}</h3>
-                            <p>{desc.text}</p>
+                            <p style={{whiteSpace: "pre-wrap"}}>{desc.text}</p>
                         </div>
                     )}
                 </AccordionPanel>

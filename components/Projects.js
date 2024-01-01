@@ -92,10 +92,10 @@ const Projects = () => {
                 {text: 'Google Maps API'}
             ],
             github: 'https://github.com/AustinLuu/rukpop',
-            website: 'https://ruk-pop.weebly.com/',
+            website: 'https://github.com/AustinLuu/rukpop',
         },
         {
-            title: 'Parallel Drone Swam',
+            title: 'Parallel Drone Swarm',
             year: 2018,
             brief: 'an IoT disaster rescue drone network',
             description: 'Built two IoT enabled ground drones communicating using MQTT protocol for PennApps XVII. The two ground drones collect thermal, moisture, and relative location data for autonomous 2D environment mapping. Built with the attempt at targeting disaster relief and search & rescue.',
@@ -170,7 +170,7 @@ const Projects = () => {
             title: 'Personal Website',
             year: 2021,
             brief: 'the thing you\'re on right now',
-            description: 'Decided my portfolio needed an upgrade. Built this website using a variety of tools I was interested in learning at the time including React, Chakra UI, SASS, and AOS. Yep, surprisingly this is my first React website!',
+            description: 'Decided my portfolio needed an upgrade. Built this website using a variety of tools I was interested in learning at the time including React, Next.js, Chakra UI, SASS, and AOS. Yep, surprisingly this is my first React website!',
             tools: [
                 {text: 'React.js'},
                 {text: 'Next.js'},

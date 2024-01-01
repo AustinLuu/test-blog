@@ -385,13 +385,13 @@ code {
   &>.tools{
     padding: 1em 0em 0em 0em;
     &>li{
-      font-size: 0.85em;
+      font-size: 0.9em;
       display: inline-block;
       border-style: none;
-      margin-right: 4px;
+      margin-right: 6px;
       margin-bottom: 4px;
-      padding: .3rem;
-      border-radius: 2px;
+      padding: 0.4rem;
+      border-radius: 12px;
       color: var(--light);
       background-color: var(--olive);
     }

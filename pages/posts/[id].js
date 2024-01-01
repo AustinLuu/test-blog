@@ -3,10 +3,12 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import Navbar from '../../components/Navbar'
 
 export default function Post({ postData }) {
   return (
     <Layout>
+      <Navbar/>
       <Head>
         <title>{postData.title}</title>
       </Head>
