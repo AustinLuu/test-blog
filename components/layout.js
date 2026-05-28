@@ -4,17 +4,17 @@ import styles from './layout.module.css'
 // import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Austin Luu'
+export const siteTitle = 'Blog – Austin Luu'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="../static/images/logo.png" alt="logo"/>
+        <link rel="icon" href="/static/images/logo.png" alt="logo"/>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Austin Luu – Engineer, developer, and builder."
         />
         <meta
           property="og:image"
@@ -63,9 +63,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/blog">
-            <a>← Back to Blog</a>
-          </Link>
+          <Link href="/blog">← Back to Blog</Link>
         </div>
       )}
     </div>

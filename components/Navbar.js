@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
         <nav id="navbar">
-            <div href="#header">
+            <div>
                 <input id="themeSwitch"type="checkbox" style={{display: 'none'}}/>
-                <label for="themeSwitch"><img className ="logo" src="../static/images/logo.png" alt="logo"/></label>
+                <label htmlFor="themeSwitch"><img className ="logo" src="/static/images/logo.png" alt="logo"/></label>
             </div>
             
             {/* <ul className = "nav-wrapper">

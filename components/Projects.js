@@ -191,26 +191,26 @@ const Projects = () => {
             <h2><span className="side-header">Projects</span></h2>
             <Accordion allowToggle>
             {projects.map(({title, brief, description, tools, github, devpost, website})=>
-                
-                <div className = 'project lt-shadow' data-aos="fade-left"data-aos-duration="750"data-aos-offset="200">
-                <AccordionItem>
+
+                <div key={title} className = 'project lt-shadow' data-aos="fade-left"data-aos-duration="750"data-aos-offset="200">
+                <AccordionItem border="none">
                 <AccordionButton className='project-btn' ><div className="project-highlight lt-flex-row"><p><b>{title}</b></p><p> — {brief}</p><AccordionIcon/></div></AccordionButton>
                 <AccordionPanel pb={4}>
-                    
+
                         <div className ='project-text'>
                             <p>{description}</p>
                             <ul className='sub-nav' style={{fontSize:'0.9em'}}>
-                                {github?<li><a target="_blank" rel="noopener noreferrer" href={github}>/github</a></li>:null}
-                                {devpost?<li><a target="_blank" rel="noopener noreferrer" href={devpost}>/devpost</a></li>:null}
-                                {website?<li><a target="_blank" rel="noopener noreferrer" href={website}>/website</a></li>:null}
+                                {github?<li key="github"><a target="_blank" rel="noopener noreferrer" href={github}>/github</a></li>:null}
+                                {devpost?<li key="devpost"><a target="_blank" rel="noopener noreferrer" href={devpost}>/devpost</a></li>:null}
+                                {website?<li key="website"><a target="_blank" rel="noopener noreferrer" href={website}>/website</a></li>:null}
                             </ul>
                             <ul className = "tools">
                             {tools.map(({text})=>
-                                <li>{text}</li>
-                            )}  
+                                <li key={text}>{text}</li>
+                            )}
                             </ul>
                         </div>
-                        
+
                 </AccordionPanel>
                 </AccordionItem>
                 </div>

@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>{title}</title>
         <meta name="description" content="Austin Luu - Portfolio" />
-        <link rel="icon" href="static/images/logo.png" />
+        <link rel="icon" href="/static/images/logo.png" />
       </Head>
       <div id="root"></div><canvas id="canvas"></canvas>
       <Navbar/>
@@ -25,7 +25,7 @@ export default function Home() {
       <Projects/>
       <Timeline/>
       <Footer/>
-    <Script src="../static/script.js" />
+    <Script src="/static/script.js" strategy="lazyOnload" />
     </div>
   )
 }
