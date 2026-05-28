@@ -16,16 +16,16 @@ const About = () => {
                     <br/>
                     <p>Feel free to download my resumes:</p>
                     <ul className='sub-nav' style ={{display: "flex",flexDirection: "column",padding:"0.5em 0em 0em 1em",fontSize: "initial"}}>
-                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2024_ML.pdf">/machine_learning</a></li>
-                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2024_SWE.pdf">/software</a></li>
-                        <li><a target="_blank"rel="noopener noreferrer" href="./static/Austin_Luu_Resume_2022_R.pdf">/robotics</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2024_ML.pdf">/machine_learning</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2024_SWE.pdf">/software</a></li>
+                        <li><a target="_blank"rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2022_R.pdf">/robotics</a></li>
                     </ul>
                     <img className="gh-chart" src="https://ghchart.rshah.org/austinluu" alt="austinluu's Github chart"/>
                     <br/>
                 </div>
 
                 <div className = 'img-container lt-flex-40' style={{paddingBottom:"12vh"}}>
-                    <img className='me lt-shadow' src='../static/images/spring-me.png' alt='Austin Luu'/>
+                    <img className='me lt-shadow' src='/static/images/spring-me.png' alt='Austin Luu'/>
                     <table className ='highlight lt-shadow'>
                         <tbody>
                         <tr>

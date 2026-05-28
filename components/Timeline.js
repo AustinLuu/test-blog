@@ -91,12 +91,12 @@ const Timeline = () => {
             <h2><span className="side-header">Timeline</span></h2>
             <Accordion defaultIndex={[0, 1, 2]} allowMultiple>
             {TIMELINE_ELEMENTS.map(ele=>
-                <AccordionItem key ={ele.year} value ={ele.year}>
+                <AccordionItem key ={ele.year} border="none">
                 <div className = 'event-year' data-aos="fade-left"data-aos-duration="750"data-aos-offset="200">
                 <AccordionButton ><h2>{ele.year}</h2><AccordionIcon/></AccordionButton>
                 <AccordionPanel pb={4}>
                     {ele.items.map(desc=>
-                        <div key ={desc.title} value={desc.title} className ='event'>
+                        <div key ={desc.title} className ='event'>
                             <h3>{desc.title}</h3>
                             <p style={{whiteSpace: "pre-wrap"}}>{desc.text}</p>
                         </div>
