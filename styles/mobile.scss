@@ -26,7 +26,10 @@
         font-size: 3em !important;
     }
     .lt-content-column {
-        padding: 2vh 20vw;
+        padding: 2vh 1.5rem;
+    }
+    .side-header {
+      display: none;
     }
     #about,#projects,#timeline{
       overflow-x: hidden!important;
@@ -67,7 +70,7 @@
       }
     }
     .lt-content-column {
-      padding: 2vh 10vw;
+      padding: 2vh 1rem;
     }
     #landing-overlay{
       padding-right: 0vw;
