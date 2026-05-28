@@ -15,7 +15,7 @@ const TIMELINE_ELEMENTS = [
             items:[
                 {
                     title: 'Software Development Engineer @ ViTAA Medical',
-                    text: 'Developing an in-house ML/AI infastructure...',
+                    text: 'Developing and maintaining in-house ML/AI infrastructure for medical imaging diagnostics, advancing 3D cardiovascular segmentation models, and continuing to lead cybersecurity tools development and implementation.',
                 },
             ]
         },
@@ -24,7 +24,7 @@ const TIMELINE_ELEMENTS = [
             items:[
                 {
                     title: 'Software Development Engineer @ ViTAA Medical',
-                    text: 'Planned and implemented software architecture and infastructure overhauls. Introducing parallel computing and automated CI/CD integration pipelines reducing product and testing run times by 30% and 43% respectively.\n\nLed development and implementation of a 3D cardiovascular auto-segmentation algorithm in PyTorch leveraging MONAI and NIfTI libraries, resulting in a 92.84% Dice and 27% time reduction in QA personnel manual adjustments.\n\nLeading all development, implementation, and management of cybsersecurity tools.',
+                    text: 'Planned and implemented software architecture and infrastructure overhauls. Introducing parallel computing and automated CI/CD integration pipelines reducing product and testing run times by 30% and 43% respectively.\n\nLed development and implementation of a 3D cardiovascular auto-segmentation algorithm in PyTorch leveraging MONAI and NIfTI libraries, resulting in a 92.84% Dice and 27% time reduction in QA personnel manual adjustments.\n\nLeading all development, implementation, and management of cybersecurity tools.',
                 },
                 {
                     title: 'Founder @ August Technologies Inc.',
