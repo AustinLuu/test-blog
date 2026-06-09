@@ -10,11 +10,11 @@ colors:
   background: "#faf8f8"
   foreground: "#141021"
   body-text: "#4e4e4e"
-  nav-text: "#747474"
+  nav-text: "#3d3d3d"
   primary-accent: "#84a59d"
   secondary-accent: "#284b63"
   tertiary-accent: "#f28482"
-  icon-button: "#717896"
+  icon-button: "#718096"
   card-border: "#dadada"
   subtle-background: "#f5f3f3"
 typography:
@@ -99,7 +99,9 @@ components:
 
 ## 1. Overview
 
-Austin Luu's portfolio is built around a single creative north star: **Creative North Star: "The Engineer's Sketchbook"**. The visual language is precise, personal, and lived-in — the kind of notebook that has careful measurements alongside personal margin notes. The system avoids startup-speak polish in favor of warmth and technical authenticity.
+**Creative North Star: "The Engineer's Sketchbook"**
+
+Austin Luu's portfolio is built around this creative north star. The visual language is precise, personal, and lived-in — the kind of notebook that has careful measurements alongside personal margin notes. The system avoids startup-speak polish in favor of warmth and technical authenticity.
 
 The design serves three audiences with different depths of engagement: recruiters scanning in under sixty seconds, collaborators doing a deeper read, and curious visitors following a thread. Every element — color, spacing, motion — is tuned to support both the glance and the linger.
 
@@ -247,7 +249,7 @@ border-radius: 5px
 padding: 1em 1.5em
 ```
 
-The 2px olive top border is the card's signature — a thin accent line that identifies all project cards as a distinct surface type. Content is hidden behind a Chakra UI Accordion; clicking the project row expands description, tech chips, and external links.
+The 2px olive top border is the card's signature — a thin accent line that identifies all project cards as a distinct surface type. Content is hidden behind an accordion component; clicking the project row expands description, tech chips, and external links.
 
 **Project highlight row:** Flex row with project title (bold, `var(--dark)`) and brief description (`—` separator). Accordion chevron right-aligned.
 
@@ -296,7 +298,7 @@ Circular crop at 256px max size, 10% desaturated. The light desaturation integra
 
 ### Timeline (Event Year / Event)
 
-Timeline uses a Chakra-adjacent accordion pattern styled with Inter. Year headers are `1.875rem`, `font-weight: 600`. The expand button has `border-width: 1px 0 0 0` (top border only) and `transition: all 0.2s`. Event body is indented `3.5rem` from left, padded `6rem` from right.
+Timeline uses an accordion pattern styled with Inter. Year headers are `1.875rem`, `font-weight: 600`. The expand button has `border-width: 1px 0 0 0` (top border only) and `transition: all 0.2s`. Event body is indented `3.5rem` from left, padded `6rem` from right.
 
 ---
 
