@@ -31,8 +31,14 @@
     .side-header {
       display: none;
     }
-    #about,#projects,#timeline{
+    #about,#projects,#experience{
       overflow-x: hidden!important;
+    }
+    .project-row-brief {
+      display: none;
+    }
+    .experience-date {
+      display: none;
     }
     .project-highlight>p>b{
       font-size: 0.85em;

@@ -146,7 +146,7 @@
       "kind": "nav",
       "refersTo": ".sub-nav > li > a",
       "description": "Terminal-path navigation link used in both the hero (section navigation) and inside project cards (external links). Monospace font, no list style, horizontal inline-block layout. The slash prefix (e.g. /about, /github) is part of the content — it is the design voice, not a visual decoration. Color inherits from link defaults (olive resting, salmon on hover).",
-      "html": "<ul class=\"ds-sub-nav-hero\">\n  <li><a href=\"#about\">/about</a></li>\n  <li><a href=\"#projects\">/projects</a></li>\n  <li><a href=\"#timeline\">/timeline</a></li>\n  <li><a href=\"#footer\">/contact</a></li>\n</ul>",
+      "html": "<ul class=\"ds-sub-nav-hero\">\n  <li><a href=\"#about\">/about</a></li>\n  <li><a href=\"#projects\">/projects</a></li>\n  <li><a href=\"#experience\">/experience</a></li>\n  <li><a href=\"#footer\">/contact</a></li>\n</ul>",
       "css": ".ds-sub-nav-hero {\n  list-style: none;\n  padding-left: 0;\n  margin: 0;\n}\n.ds-sub-nav-hero > li {\n  display: inline-block;\n  font-family: 'Roboto Mono', monospace;\n  font-size: 1em;\n  font-weight: 400;\n  color: #141021;\n  padding-right: 0.5em;\n}\n.ds-sub-nav-hero > li > a {\n  color: #84a59d;\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n.ds-sub-nav-hero > li > a:hover {\n  color: #f7adae;\n  transition: color 0.7s;\n}\n.ds-sub-nav-hero > li > a:focus-visible {\n  outline: 2px solid #84a59d;\n  outline-offset: 2px;\n  border-radius: 2px;\n}"
     }
   ],

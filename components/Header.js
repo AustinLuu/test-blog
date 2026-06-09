@@ -80,7 +80,7 @@ const Header = () => {
                         <a href='#projects'>/projects</a>
                     </li>
                     <li>
-                        <a href='#timeline'>/timeline</a>
+                        <a href='#experience'>/experience</a>
                     </li>
                     <li>
                         <a href="#footer">/contact</a>
