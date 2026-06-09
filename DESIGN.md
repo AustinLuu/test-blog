@@ -99,7 +99,7 @@ components:
 
 ## 1. Overview
 
-Austin Luu's portfolio is built around a single creative north star: **The Engineer's Sketchbook**. The visual language is precise, personal, and lived-in — the kind of notebook that has careful measurements alongside personal margin notes. The system avoids startup-speak polish in favor of warmth and technical authenticity.
+Austin Luu's portfolio is built around a single creative north star: **Creative North Star: "The Engineer's Sketchbook"**. The visual language is precise, personal, and lived-in — the kind of notebook that has careful measurements alongside personal margin notes. The system avoids startup-speak polish in favor of warmth and technical authenticity.
 
 The design serves three audiences with different depths of engagement: recruiters scanning in under sixty seconds, collaborators doing a deeper read, and curious visitors following a thread. Every element — color, spacing, motion — is tuned to support both the glance and the linger.
 
@@ -314,10 +314,10 @@ Timeline uses a Chakra-adjacent accordion pattern styled with Inter. Year header
 
 ### Don'ts
 
-- **Don't use gradient backgrounds or gradient overlays.** The palette is flat, muted, and warm. Gradients belong to the startup world this system is explicitly not.
+- **Don't** design for generic SaaS landing pages — no gradient hero metrics, no big-number stat callouts, no hero-with-stats template.
 - **Don't add new accent colors.** The three-color accent system (olive / navy / salmon) is complete. Adding a fourth branded color dilutes the intentionality.
 - **Don't use box-shadows larger or darker than `.lt-shadow`.** The elevation philosophy is ambient and subtle. Heavy drop-shadows break the physical warmth of the design.
-- **Don't write copy that uses "unleash," "empower," "transform," or startup superlatives.** The voice is direct, human, and technically grounded.
+- **Don't** use startup-speak copy ("unleash," "empower," "transform," "seamless," "next-generation"). Austin is a person, not a product launch.
 - **Don't apply motion to layout.** The rotating text and cascade fade-in are intentional hero moments. Animating list items, headings, or navigation on every scroll undermines the system's restraint.
 - **Don't center body text.** The site reads left-to-right like a notebook. Center alignment is used only for the footer copyright block.
 - **Don't make the navbar opaque.** The translucent `--light-op` navbar is important for maintaining visual continuity between the hero and content sections.
