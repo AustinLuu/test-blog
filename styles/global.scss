@@ -503,4 +503,10 @@ button{
     opacity: 1 !important;
     transform: none !important;
   }
+  #landing-overlay > h1,
+  #landing-overlay > ul > li,
+  .rotating-text {
+    opacity: 1 !important;
+    animation: none !important;
+  }
 }
