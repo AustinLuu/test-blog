@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-08T00:00:00.000Z",
+  "title": "Design System: Austin Luu Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Page Background",
+        "canonical": "#faf8f8",
+        "tonalRamp": ["#141021", "#2b2738", "#424050", "#595768", "#70707f", "#9b9aa3", "#c5c4c7", "#faf8f8"]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Heading / Strong Text",
+        "canonical": "#141021",
+        "tonalRamp": ["#141021", "#252237", "#36344d", "#474663", "#585879", "#797a96", "#a9aab5", "#faf8f8"]
+      },
+      "primary-accent": {
+        "role": "primary",
+        "displayName": "Olive / Muted Sage",
+        "canonical": "#84a59d",
+        "tonalRamp": ["#1e3330", "#2e4f4b", "#3e6b65", "#508880", "#84a59d", "#a3c0ba", "#c2dad6", "#e5f0ef"]
+      },
+      "secondary-accent": {
+        "role": "secondary",
+        "displayName": "Navy / Ink Blue",
+        "canonical": "#284b63",
+        "tonalRamp": ["#0b1a23", "#152e3e", "#1f4259", "#284b63", "#3d6f8f", "#6997b5", "#9bbfd5", "#cde0ec"]
+      },
+      "tertiary-accent": {
+        "role": "tertiary",
+        "displayName": "Salmon / Warm Coral",
+        "canonical": "#f28482",
+        "tonalRamp": ["#5c1817", "#8a2726", "#b83735", "#d95554", "#f28482", "#f6a8a7", "#f9cac9", "#fde8e8"]
+      },
+      "body-text": {
+        "role": "neutral",
+        "displayName": "Body Text",
+        "canonical": "#4e4e4e",
+        "tonalRamp": ["#1a1a1a", "#2e2e2e", "#3e3e3e", "#4e4e4e", "#6e6e6e", "#909090", "#b8b8b8", "#e4e4e4"]
+      },
+      "card-border": {
+        "role": "neutral",
+        "displayName": "Card / Button Border",
+        "canonical": "#dadada",
+        "tonalRamp": ["#3a3a3a", "#5a5a5a", "#7a7a7a", "#9a9a9a", "#b8b8b8", "#dadada", "#ebebeb", "#f7f7f7"]
+      },
+      "icon-button": {
+        "role": "neutral",
+        "displayName": "Icon Button Text",
+        "canonical": "#717896",
+        "tonalRamp": ["#1a1c2e", "#2d3050", "#3f4470", "#505688", "#717896", "#9296b0", "#b5b8ca", "#d8d9e5"]
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient",
+        "value": "0px 14px 28px rgba(27, 33, 48, 0.06), 0 10px 10px rgba(27, 33, 48, 0.02)",
+        "purpose": "Applied to all card-like surfaces (`.lt-shadow`). Soft, diffuse ambient shadow — physically warm, like an object on a desk in indirect daylight. The only elevation primitive in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "link-hover-color",
+        "value": "transition: color 0.7s",
+        "purpose": "Link color change on hover (olive → salmon). Intentionally slow so the warm salmon doesn't feel aggressive on arrival."
+      },
+      {
+        "name": "link-hover-all",
+        "value": "transition: all 0.2s ease",
+        "purpose": "Default link transition (non-color properties). Fast enough to feel responsive."
+      },
+      {
+        "name": "button-hover",
+        "value": "transition: all 250ms ease 0s",
+        "purpose": "Icon button hover state fill (transparent → outlinegray background). Quick and precise."
+      },
+      {
+        "name": "side-header-reveal",
+        "value": "transition: all 0.6s cubic-bezier(.25, .8, .25, 1); transition-delay: 0.3s",
+        "purpose": "The annotation border line on section headings expands (width: 0 → 180px) on section hover. The cubic-bezier gives it a deceleration that feels like a pen stroke completing."
+      },
+      {
+        "name": "letter-flip-out",
+        "value": "transform: rotateX(90deg); transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2)",
+        "purpose": "Each letter exits upward in 3D space. The curve accelerates sharply then decelerates, like a page being flipped."
+      },
+      {
+        "name": "letter-flip-in",
+        "value": "transition: 0.32s ease",
+        "purpose": "Each letter enters from below (rotateX(-90deg) → 0). Standard ease for a natural landing."
+      },
+      {
+        "name": "cascade-fade-in",
+        "value": "animation: fadeIn ease 0.6s; animation-fill-mode: forwards",
+        "purpose": "Hero greeting and sub-nav items fade in sequentially. Delays: h1[1] 0.4s, h1[2] 0.8s, li[1-4] 1.3–1.6s. Establishes visual hierarchy on first load."
+      },
+      {
+        "name": "logo-hover",
+        "value": "transition: 0.4s; opacity: 0.75",
+        "purpose": "Logo fades on hover to signal it is interactive (the dark/light theme toggle)."
+      },
+      {
+        "name": "prefers-reduced-motion",
+        "value": "animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important",
+        "purpose": "All animations and transitions collapse to instant when the user has requested reduced motion. Required for accessibility. Covers AOS data attributes as well."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "IconButton",
+      "kind": "button",
+      "refersTo": "button.icon-btn",
+      "description": "Square icon button used in the footer for social links (GitHub, LinkedIn, Instagram, Email, Resume). Transparent background by default; fills with outlinegray on hover. Icon color is muted slate (--light-blue). All buttons are the same 3em × 3em size forming a uniform strip.",
+      "html": "<button class=\"ds-icon-btn\" aria-label=\"GitHub\" type=\"button\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\">\n    <path d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\"></path>\n  </svg>\n</button>",
+      "css": ".ds-icon-btn {\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  appearance: none;\n  border-radius: 0.375rem;\n  border: 1px solid #dadada;\n  background-color: transparent;\n  color: rgb(113, 128, 150);\n  height: 3em;\n  min-width: 3em;\n  font-size: 1.125rem;\n  font-weight: 600;\n  transition: all 250ms ease 0s;\n  outline: none;\n  user-select: none;\n  -webkit-tap-highlight-color: transparent;\n}\n.ds-icon-btn:hover {\n  background-color: #dadada;\n  transition: background-color 0.8s;\n}\n.ds-icon-btn:focus-visible {\n  outline: 2px solid #84a59d;\n  outline-offset: 2px;\n}"
+    },
+    {
+      "name": "NavLink",
+      "kind": "nav",
+      "refersTo": ".nav-item > a",
+      "description": "Horizontal navigation link in the fixed top navbar. 0.75 opacity at rest, underlines on hover using a light gray underline (outlinegray, 2.5px, 5px offset). No background. Dark text (#3d3d3d) even in dark mode so that nav remains legible against the translucent navbar background.",
+      "html": "<nav id=\"ds-navbar\">\n  <div class=\"ds-nav-logo-wrap\">\n    <a href=\"#header\" aria-label=\"Home\">\n      <img class=\"ds-logo\" src=\"/static/images/logo.png\" alt=\"logo\" width=\"30\" />\n    </a>\n  </div>\n  <ul class=\"ds-nav-wrapper\">\n    <li class=\"ds-nav-item\"><a href=\"#about\">about</a></li>\n    <li class=\"ds-nav-item\"><a href=\"#projects\">projects</a></li>\n    <li class=\"ds-nav-item\"><a href=\"#timeline\">timeline</a></li>\n    <li class=\"ds-nav-item\"><a href=\"#footer\">contact</a></li>\n  </ul>\n</nav>",
+      "css": "#ds-navbar {\n  display: flex;\n  position: fixed;\n  right: 0;\n  left: 0;\n  z-index: 3000;\n  align-items: center;\n  padding: 6px 6%;\n  width: 100vw;\n  background: rgba(250, 248, 248, 0.95);\n  backdrop-filter: blur(8px);\n  -webkit-backdrop-filter: blur(8px);\n}\n.ds-nav-wrapper {\n  width: 100%;\n  display: flex;\n  justify-content: flex-end;\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  opacity: 0.75;\n}\n.ds-nav-item {\n  display: inline;\n  list-style: none;\n  margin: 12px 15px;\n}\n.ds-nav-item > a {\n  font-size: 0.95em;\n  color: #3d3d3d;\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n.ds-nav-item > a:hover {\n  text-decoration: underline;\n  text-decoration-color: #dadada;\n  text-decoration-thickness: 2.5px;\n  text-underline-offset: 5px;\n}\n.ds-logo {\n  padding-top: 6px;\n  width: 30px;\n  height: auto;\n  transition: 0.4s;\n}\n.ds-logo:hover {\n  opacity: 0.75;\n}"
+    },
+    {
+      "name": "ProjectCard",
+      "kind": "card",
+      "refersTo": ".project.lt-shadow",
+      "description": "Accordion-style project card. The 2px olive top border is the visual signature of this component — it identifies all project surfaces in the system. Content row shows title (bold) and brief description with an expand chevron. Clicking reveals description paragraph, sub-nav links, and tech chip list. Box shadow is ambient (lt-shadow).",
+      "html": "<div class=\"ds-project\">\n  <div class=\"ds-project-header\">\n    <button class=\"ds-project-btn\" aria-expanded=\"false\" aria-controls=\"ds-project-body-kabo\">\n      <div class=\"ds-project-highlight\">\n        <p><b>Kabo</b></p>\n        <p> — a lightweight karaoke Discord bot</p>\n        <svg class=\"ds-chevron\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>\n      </div>\n    </button>\n  </div>\n  <div class=\"ds-project-body\" id=\"ds-project-body-kabo\" hidden>\n    <div class=\"ds-project-text\">\n      <p>Kabo is a karaoke Discord bot developed at Hack the North 2020++ for simulating karaoke with live pitch and lyrical correctness scoring.</p>\n      <ul class=\"ds-sub-nav\">\n        <li><a href=\"https://github.com/\" target=\"_blank\" rel=\"noopener noreferrer\">/github</a></li>\n        <li><a href=\"https://devpost.com/\" target=\"_blank\" rel=\"noopener noreferrer\">/devpost</a></li>\n      </ul>\n      <ul class=\"ds-tools\">\n        <li>Python</li>\n        <li>Node.js</li>\n        <li>Discord.js</li>\n      </ul>\n    </div>\n  </div>\n</div>",
+      "css": ".ds-project {\n  font-size: 1.1em;\n  margin: 0 0 1rem 0;\n  border-radius: 5px;\n  border: 1px solid #dadada;\n  border-top: 2px solid #84a59d;\n  padding: 1em 1.5em;\n  box-shadow: 0px 14px 28px rgba(27, 33, 48, 0.06), 0 10px 10px rgba(27, 33, 48, 0.02);\n  background-color: transparent;\n}\n.ds-project-btn {\n  cursor: pointer;\n  display: inline-flex;\n  appearance: none;\n  align-items: center;\n  justify-content: flex-start;\n  background-color: transparent;\n  border: none;\n  padding: 0;\n  width: 100%;\n  font-size: 1em;\n  color: inherit;\n  transition: all 250ms ease 0s;\n}\n.ds-project-btn:hover {\n  background-color: transparent;\n}\n.ds-project-highlight {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.ds-project-highlight p b {\n  padding-right: 0.3em;\n  font-weight: 600;\n  color: #141021;\n}\n.ds-project-highlight p {\n  font-weight: 400;\n  white-space: nowrap;\n}\n.ds-chevron {\n  margin-left: auto;\n  flex-shrink: 0;\n}\n.ds-project-text > p {\n  padding: 1em 0 0 0;\n}\n.ds-sub-nav {\n  list-style: none;\n  padding: 1em 0 0 0;\n  margin: 0;\n}\n.ds-sub-nav > li {\n  display: inline-block;\n  font-family: 'Roboto Mono', monospace;\n  font-size: 0.9em;\n  font-weight: 400;\n  padding-right: 0.5em;\n}\n.ds-sub-nav > li > a {\n  color: #84a59d;\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n.ds-sub-nav > li > a:hover {\n  color: #f7adae;\n  transition: color 0.7s;\n}\n.ds-tools {\n  list-style: none;\n  padding: 1em 0 0 0;\n  margin: 0;\n}\n.ds-tools > li {\n  font-size: 0.9em;\n  display: inline-block;\n  border: none;\n  margin-right: 6px;\n  margin-bottom: 4px;\n  padding: 0.4rem;\n  border-radius: 12px;\n  color: #faf8f8;\n  background-color: #84a59d;\n}"
+    },
+    {
+      "name": "TechChip",
+      "kind": "chip",
+      "refersTo": ".tools > li",
+      "description": "Technology tag used inside project accordion panels. Olive fill with light text. No border, no shadow. Used as an unordered list item. Pill-shaped (12px border-radius). Groups related technologies for a project without requiring prose explanation.",
+      "html": "<ul class=\"ds-chip-list\">\n  <li class=\"ds-chip\">Python</li>\n  <li class=\"ds-chip\">Node.js</li>\n  <li class=\"ds-chip\">Discord.js</li>\n</ul>",
+      "css": ".ds-chip-list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 4px 6px;\n}\n.ds-chip {\n  font-size: 0.9em;\n  display: inline-block;\n  border: none;\n  padding: 0.4rem;\n  border-radius: 12px;\n  color: #faf8f8;\n  background-color: #84a59d;\n  font-family: 'Source Sans Pro', sans-serif;\n  line-height: 1.2;\n}"
+    },
+    {
+      "name": "SubNavLink",
+      "kind": "nav",
+      "refersTo": ".sub-nav > li > a",
+      "description": "Terminal-path navigation link used in both the hero (section navigation) and inside project cards (external links). Monospace font, no list style, horizontal inline-block layout. The slash prefix (e.g. /about, /github) is part of the content — it is the design voice, not a visual decoration. Color inherits from link defaults (olive resting, salmon on hover).",
+      "html": "<ul class=\"ds-sub-nav-hero\">\n  <li><a href=\"#about\">/about</a></li>\n  <li><a href=\"#projects\">/projects</a></li>\n  <li><a href=\"#timeline\">/timeline</a></li>\n  <li><a href=\"#footer\">/contact</a></li>\n</ul>",
+      "css": ".ds-sub-nav-hero {\n  list-style: none;\n  padding-left: 0;\n  margin: 0;\n}\n.ds-sub-nav-hero > li {\n  display: inline-block;\n  font-family: 'Roboto Mono', monospace;\n  font-size: 1em;\n  font-weight: 400;\n  color: #141021;\n  padding-right: 0.5em;\n}\n.ds-sub-nav-hero > li > a {\n  color: #84a59d;\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n.ds-sub-nav-hero > li > a:hover {\n  color: #f7adae;\n  transition: color 0.7s;\n}\n.ds-sub-nav-hero > li > a:focus-visible {\n  outline: 2px solid #84a59d;\n  outline-offset: 2px;\n  border-radius: 2px;\n}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineer's Sketchbook — Precise, personal, lived-in. Like a notebook full of careful drawings and personal annotations: both rigorous and warm.",
+    "overview": "Austin Luu's portfolio is a personal site that communicates who Austin is (engineer, builder, athlete, food person), showcases range of work, and invites contact. The visual system is built to serve a quick scroll on first visit and a deep read on return. Three audiences: recruiters/hiring managers who scan for signal in under 60 seconds; collaborators/builders who read deeply to understand technical depth and taste; and curious people who follow one thread (e.g., powerlifting + ML) without knowing what they are looking for. The brand personality is curious, technical, warm — and the voice is direct and human. Technical depth comes through in what is shown, not how it is described.",
+    "keyCharacteristics": [
+      "Muted sage primary accent (#84a59d) — a deliberate departure from default blue; calm, grounding, technically restrained",
+      "Warm off-white background (#faf8f8) — not clinical white; the slightly warm cast is foundational to the sketchbook feel",
+      "Single ambient elevation class (lt-shadow) — soft, diffuse, physically warm; no shadow scales or tokens beyond this",
+      "Roboto Mono for terminal-path navigation — the slash-prefixed links (/about, /github) are design voice, not just style",
+      "3D letter-flip rotating text — per-letter transform-origin 0.8em Z-axis creates a book-page flip; a technically precise hero moment",
+      "Side-header annotation reveal — .side-header::before border expands on section hover via cubic-bezier, like a pen stroke completing",
+      "Dracula theme code blocks — a specific aesthetic preference recognizable to engineers, not a generic dark code block",
+      "prefers-reduced-motion support baked in — all animations and AOS transforms collapse to instant"
+    ],
+    "rules": [
+      {
+        "name": "Olive is primary",
+        "body": "The olive (#84a59d) accent is the visual signature of the portfolio. It appears on project card top borders, tech chip backgrounds, link resting states, and the side-header annotation border. Do not substitute navy or salmon in these roles.",
+        "section": "Colors"
+      },
+      {
+        "name": "Single elevation primitive",
+        "body": "The system uses exactly one shadow value (the .lt-shadow class). Do not introduce new shadow tokens, layered shadows, or colored shadows. The ambient philosophy — soft, diffuse, physically warm — is incompatible with sharp or dark shadows.",
+        "section": "Elevation"
+      },
+      {
+        "name": "Monospace for terminal paths",
+        "body": "Roboto Mono is reserved for the sub-nav component. It must not be used for body text, headings, or labels. Its presence signals the terminal-path metaphor that is central to the portfolio's identity voice.",
+        "section": "Typography"
+      },
+      {
+        "name": "Slow hover color transition",
+        "body": "Link hover color transitions at 0.7s (not 0.2s). The delay is intentional — salmon is a warm color and arriving too quickly would feel aggressive. Respect the timing.",
+        "section": "Motion"
+      },
+      {
+        "name": "Content width cap",
+        "body": "All main content lives inside 860px max-width centered columns with 5vh 2rem padding. Full-bleed text is not permitted. This is the reading width that supports both quick scan and deep read.",
+        "section": "Layout"
+      },
+      {
+        "name": "Reduced motion override is required",
+        "body": "Any new animation or transition must be covered by the @media (prefers-reduced-motion: reduce) block. Animation collapses to 0.01ms duration, not removal — this preserves the animation-fill-mode: forwards state.",
+        "section": "Motion"
+      },
+      {
+        "name": "No gradient backgrounds",
+        "body": "The palette is flat. Gradients belong to the startup world this system explicitly rejects. This includes hero overlays, card backgrounds, and button states.",
+        "section": "Colors"
+      },
+      {
+        "name": "Project card top border identifies the surface",
+        "body": "The 2px olive border-top on .project is the component's visual identity marker. It must not be removed, changed to a different accent color, or replaced with a background fill.",
+        "section": "Components"
+      }
+    ],
+    "dos": [
+      "Use olive (#84a59d) as the primary accent on interactive surfaces, borders, and chip backgrounds",
+      "Apply the ambient shadow class (.lt-shadow) to all card surfaces",
+      "Write navigation links as terminal paths with a leading slash (/about, /github)",
+      "Use Roboto Mono exclusively for sub-nav and project link items",
+      "Cap content width at 860px with 5vh 2rem padding",
+      "Include prefers-reduced-motion overrides for any new animation",
+      "Let the 0.7s link hover color transition run its full duration",
+      "Use the warm off-white (#faf8f8) background — not pure white (#ffffff)",
+      "Show technical depth through what is shown (code snippets, chip lists, project specifics), not through descriptive copy",
+      "Keep the navbar translucent (--light-op) so the hero canvas remains visible under scroll"
+    ],
+    "donts": [
+      "Don't use gradient backgrounds or overlays",
+      "Don't introduce new accent colors beyond olive, navy, and salmon",
+      "Don't use box-shadows larger, darker, or more numerous than the single .lt-shadow class",
+      "Don't write copy with startup superlatives (unleash, empower, transform, revolutionize)",
+      "Don't animate layout elements on scroll beyond the existing AOS fade-up on sections",
+      "Don't center body text — center alignment is reserved for the footer copyright block only",
+      "Don't use Roboto Mono for anything other than the terminal-path navigation metaphor",
+      "Don't make the navbar opaque — the translucency is structural, not decorative",
+      "Don't remove the 2px olive border-top from project cards",
+      "Don't shorten the link hover color transition below 0.5s — the warmth of salmon requires time to land gracefully"
+    ]
+  }
+}
