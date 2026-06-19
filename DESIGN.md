@@ -19,12 +19,12 @@ colors:
   subtle-background: "#f5f3f3"
 typography:
   display:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "4em"
     fontWeight: "700"
     lineHeight: "1.2"
   body:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "1em"
     fontWeight: "400"
     lineHeight: "1.55"
@@ -34,12 +34,12 @@ typography:
     fontWeight: "400"
     lineHeight: "1.4"
   section-heading:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "3em"
     fontWeight: "700"
     lineHeight: "1.2"
   timeline-heading:
-    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "1.875rem"
     fontWeight: "600"
     lineHeight: "1.2"
@@ -164,18 +164,18 @@ Links rest at `var(--olive)` and transition to `#f7adae` (a lighter salmon) over
 
 | Role | Family | Size | Weight | Line Height | Use |
 |---|---|---|---|---|---|
-| Display / h1 | `'Source Sans Pro', sans-serif` | `4em` | 700 | 1.2 | Hero greeting, rotating identity text |
-| Section heading / h2 | `'Source Sans Pro', sans-serif` | `3em` | 700 | 1.2 | Section titles (About, Projects, Timeline) |
-| Sub-heading / h3 | `'Source Sans Pro', sans-serif` | `1em` | 600 | 1.2 | Event titles in timeline |
-| Body / p, ul | `'Source Sans Pro', sans-serif` | `1em (16px base)` | 400 | 1.55 | Paragraphs, list items |
-| Lists | `'Source Sans Pro', sans-serif` | `1.1em` | 400 | 1.55 | Project and content lists |
+| Display / h1 | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `4em` | 700 | 1.2 | Hero greeting, rotating identity text |
+| Section heading / h2 | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `3em` | 700 | 1.2 | Section titles (About, Projects, Timeline) |
+| Sub-heading / h3 | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1em` | 600 | 1.2 | Event titles in timeline |
+| Body / p, ul | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1em (16px base)` | 400 | 1.55 | Paragraphs, list items |
+| Lists | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1.1em` | 400 | 1.55 | Project and content lists |
 | Sub-nav / label | `'Roboto Mono', monospace` | `1em` | 400 | 1.4 | Navigation slugs (`/about`, `/projects`) |
-| Timeline year | `'Inter', system-ui` | `1.875rem` | 600 | 1.2 | Year headers in timeline accordion |
+| Timeline year | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1.875rem` | 600 | 1.2 | Year headers in timeline accordion |
 | Code | `monospace` | `1.05em` | 400 | 1.5 | Inline code and JSON snippet display |
 
 ### Typographic Decisions
 
-**Source Sans Pro as primary:** Chosen for its legibility at body sizes and its slightly humanist construction. It doesn't feel like a corporate sans, which matches the "warm over polish" principle.
+**Inter as primary:** Chosen for its legibility at body sizes and its slightly humanist construction. It doesn't feel like a corporate sans, which matches the "warm over polish" principle.
 
 **Roboto Mono for sub-nav:** The monospace font on `/about`, `/projects`, `/timeline`, `/contact` is a deliberate engineering aesthetic choice. It signals that this is a terminal-style navigation — a nod to command-line thinking without being a caricature.
 

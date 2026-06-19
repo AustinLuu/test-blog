@@ -139,7 +139,7 @@
       "refersTo": ".tools > li",
       "description": "Technology tag used inside project accordion panels. Olive fill with light text. No border, no shadow. Used as an unordered list item. Pill-shaped (12px border-radius). Groups related technologies for a project without requiring prose explanation.",
       "html": "<ul class=\"ds-chip-list\">\n  <li class=\"ds-chip\">Python</li>\n  <li class=\"ds-chip\">Node.js</li>\n  <li class=\"ds-chip\">Discord.js</li>\n</ul>",
-      "css": ".ds-chip-list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 4px 6px;\n}\n.ds-chip {\n  font-size: 0.9em;\n  display: inline-block;\n  border: none;\n  padding: 0.4rem;\n  border-radius: 12px;\n  color: #faf8f8;\n  background-color: #84a59d;\n  font-family: 'Source Sans Pro', sans-serif;\n  line-height: 1.2;\n}"
+      "css": ".ds-chip-list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  display: flex;\n  flex-wrap: wrap;\n  gap: 4px 6px;\n}\n.ds-chip {\n  font-size: 0.9em;\n  display: inline-block;\n  border: none;\n  padding: 0.4rem;\n  border-radius: 12px;\n  color: #faf8f8;\n  background-color: #84a59d;\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  line-height: 1.2;\n}"
     },
     {
       "name": "SubNavLink",
