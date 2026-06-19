@@ -19,12 +19,12 @@ colors:
   subtle-background: "#f5f3f3"
 typography:
   display:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "4em"
     fontWeight: "700"
     lineHeight: "1.2"
   body:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "1em"
     fontWeight: "400"
     lineHeight: "1.55"
@@ -34,12 +34,12 @@ typography:
     fontWeight: "400"
     lineHeight: "1.4"
   section-heading:
-    fontFamily: "'Source Sans Pro', sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "3em"
     fontWeight: "700"
     lineHeight: "1.2"
   timeline-heading:
-    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     fontSize: "1.875rem"
     fontWeight: "600"
     lineHeight: "1.2"
