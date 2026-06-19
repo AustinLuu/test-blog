@@ -170,7 +170,7 @@ Links rest at `var(--olive)` and transition to `#f7adae` (a lighter salmon) over
 | Body / p, ul | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1em (16px base)` | 400 | 1.55 | Paragraphs, list items |
 | Lists | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1.1em` | 400 | 1.55 | Project and content lists |
 | Sub-nav / label | `'Roboto Mono', monospace` | `1em` | 400 | 1.4 | Navigation slugs (`/about`, `/projects`) |
-| Timeline year | `'Inter', system-ui` | `1.875rem` | 600 | 1.2 | Year headers in timeline accordion |
+| Timeline year | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` | `1.875rem` | 600 | 1.2 | Year headers in timeline accordion |
 | Code | `monospace` | `1.05em` | 400 | 1.5 | Inline code and JSON snippet display |
 
 ### Typographic Decisions
