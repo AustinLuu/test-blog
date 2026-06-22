@@ -20,8 +20,6 @@ const About = () => {
                         <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2024_SWE.pdf">/software</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
                         <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2022_R.pdf">/robotics</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
                     </ul>
-                    <img className="gh-chart" src="https://ghchart.rshah.org/austinluu" alt="austinluu's Github chart"/>
-                    <br/>
                 </div>
 
                 <div className = 'img-container lt-flex-40' style={{paddingBottom:"12vh"}}>
@@ -60,6 +58,7 @@ const About = () => {
                     </table>
                 </div>
             </div>
+            <img className="gh-chart" src="https://ghchart.rshah.org/austinluu" alt="austinluu's Github chart"/>
         </div>
     )
 }
