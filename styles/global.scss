@@ -38,6 +38,15 @@ body {
   --lt-colours-secondary: var(--olive) !important;
   --lt-colours-gray: var(--outlinegray) !important;
   --invert-filter: invert(0) hue-rotate(0);
+
+  /* Type scale */
+  --text-xs:        0.72em;
+  --text-sm:        0.78em;
+  --text-secondary: 0.88em;
+  --text-body:      0.95em;
+  --text-base:      1em;
+  --text-md:        1.1em;
+  --text-lg:        1.3em;
 }
 [saved-theme="dark"] {
   --light: #1c1b22 !important;
@@ -125,11 +134,10 @@ p, ul {
 }
 .nav-item {
   align-items: center;
-  font-size: 16px;
   color: #3d3d3d;
   text-align: end;
   margin: 12px 15px;
-  font-size: 0.95em;
+  font-size: var(--text-body);
   display: inline;
   list-style: none;
   &>a{
@@ -160,7 +168,7 @@ p, ul {
 .side-header {
   position: absolute;
   opacity: 0.7;
-  font-size: 0.8em;
+  font-size: var(--text-secondary);
   transition: opacity 2s cubic-bezier(.25, .8, .25, 1);
   transform-origin: top left;
   transform: translateX(-2em) rotateZ(90deg) rotateZ(180deg) translateX(-100%) ;
@@ -202,7 +210,7 @@ p, ul {
 .sub-nav>li {
   display: inline-block;
   font-family: roboto mono,monospace;
-  font-size: 1em;
+  font-size: var(--text-base);
   font-weight: 400;
   color: var(--dark);
   padding-right: .5em;
@@ -312,7 +320,7 @@ p, ul {
   box-shadow: 0px 14px 28px rgba(27, 33, 48, 0.06), 0 10px 10px rgba(27, 33, 48,0.02);
 }
 .lt-card {
-  font-size: 1.05em;
+  font-size: var(--text-md);
 }
 div>.highlight {
   z-index: 5;
@@ -333,7 +341,7 @@ div>.highlight {
   min-height: 256px;
 }
 code {
-  font-size: 1.05em;
+  font-size: var(--text-md);
   &.number-bar > span{
     margin-right: 0.4em;
     padding: 0 0.4em;
@@ -353,7 +361,7 @@ code {
 
 //3.Projects
 .project{
-  font-size: 1.1em;
+  font-size: var(--text-md);
   margin: 0rem 0rem 1rem 0rem;
   border-radius: 5px;
   border: 1px solid var(--outlinegray);
@@ -361,7 +369,7 @@ code {
   padding: 1em 1.5em;
 }
 .project-btn{
-  font-size: 1em;
+  font-size: var(--text-base);
   height: unset;
   justify-content: flex-start;
   &:hover{
@@ -435,11 +443,11 @@ code {
   padding: 0.25rem 6rem 1rem 3.5rem;
   &>h3{
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: var(--text-body);
     padding-bottom: 1em;
   }
   &>p{
-    font-size: 0.95em;
+    font-size: var(--text-body);
   }
 }
 //5.Footer
@@ -476,7 +484,7 @@ button{
   }
 }
 .icon-btn{
-  font-size: 1.125rem;
+  font-size: var(--text-md);
 }
 .theme-toggle {
   margin-left: auto;
@@ -484,7 +492,7 @@ button{
   height: 2.25em;
   min-width: 2.25em;
   border-radius: 50%;
-  font-size: 1.05rem;
+  font-size: var(--text-md);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +511,7 @@ button{
 }
 .filter-btn {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.78em;
+  font-size: var(--text-sm);
   font-weight: 400;
   letter-spacing: 0.02em;
   padding: 0.3em 0.85em;
@@ -537,12 +545,12 @@ button{
 }
 .project-featured-year {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.78em;
+  font-size: var(--text-sm);
   color: var(--lightgray);
 }
 .project-cat-tag {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.72em;
+  font-size: var(--text-sm);
   color: var(--olive);
   border: 1px solid var(--olive);
   padding: 0.1em 0.55em;
@@ -551,7 +559,7 @@ button{
   letter-spacing: 0.08em;
 }
 .project-featured-title {
-  font-size: 1.3em !important;
+  font-size: var(--text-lg) !important;
   font-weight: 700 !important;
   color: var(--dark) !important;
   margin-bottom: 0.2em;
@@ -559,12 +567,12 @@ button{
 .project-featured-brief {
   font-style: italic;
   color: var(--gray);
-  font-size: 0.93em;
+  font-size: var(--text-body);
   margin-bottom: 0.6em;
 }
 .project-featured-desc {
   color: var(--gray);
-  font-size: 0.95em;
+  font-size: var(--text-body);
   line-height: 1.6;
   max-width: 65ch;
 }
@@ -576,7 +584,7 @@ button{
 }
 .tools > li {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.75em;
+  font-size: var(--text-sm);
   display: inline-block;
   border: 1px solid var(--outlinegray);
   background: transparent;
@@ -620,12 +628,12 @@ button{
 }
 .project-row-title {
   font-weight: 600;
-  font-size: 1em;
+  font-size: var(--text-base);
   color: var(--dark);
   flex-shrink: 0;
 }
 .project-row-brief {
-  font-size: 0.88em;
+  font-size: var(--text-secondary);
   color: var(--lightgray);
   flex: 1 1 0;
   white-space: nowrap;
@@ -642,11 +650,11 @@ button{
 }
 .project-row-year {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.78em;
+  font-size: var(--text-sm);
   color: var(--lightgray);
 }
 .project-row-arrow {
-  font-size: 0.7em;
+  font-size: var(--text-xs);
   color: var(--lightgray);
   display: inline-block;
   transition: transform 0.2s ease;
@@ -657,7 +665,7 @@ button{
 .project-row-body {
   padding: 0.25em 0 1em;
   & > p {
-    font-size: 0.93em;
+    font-size: var(--text-body);
     color: var(--gray);
     max-width: 65ch;
   }
@@ -666,7 +674,7 @@ button{
   color: var(--lightgray);
   font-style: italic;
   padding: 2em 0;
-  font-size: 0.9em;
+  font-size: var(--text-secondary);
 }
 
 // Experience section
@@ -732,12 +740,12 @@ button{
   margin-bottom: 0.25em;
 }
 .experience-role {
-  font-size: 0.97em;
+  font-size: var(--text-body);
   font-weight: 600;
   color: var(--dark);
 }
 .experience-chevron {
-  font-size: 0.65em;
+  font-size: var(--text-xs);
   color: var(--lightgray);
   flex-shrink: 0;
   transition: transform 0.2s ease;
@@ -753,23 +761,23 @@ button{
   margin-bottom: 0.3em;
 }
 .experience-company {
-  font-size: 0.84em;
+  font-size: var(--text-secondary);
   color: var(--gray);
   font-weight: 400;
 }
 .experience-sep {
-  font-size: 0.8em;
+  font-size: var(--text-secondary);
   color: var(--outlinegray);
   line-height: 1;
 }
 .experience-date {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.74em;
+  font-size: var(--text-sm);
   color: var(--lightgray);
   white-space: nowrap;
 }
 .experience-metric {
-  font-size: 0.83em;
+  font-size: var(--text-secondary);
   color: var(--gray);
   line-height: 1.45;
 }
@@ -782,7 +790,7 @@ button{
     & > li {
       margin-bottom: 0.5em;
       color: var(--gray);
-      font-size: 0.88em;
+      font-size: var(--text-secondary);
       line-height: 1.6;
       &::marker {
         color: var(--outlinegray);

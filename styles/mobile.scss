@@ -41,10 +41,10 @@
       display: none;
     }
     .project-highlight>p>b{
-      font-size: 0.85em;
+      font-size: var(--text-secondary);
     }
     .project-text{
-      font-size: 0.85em;
+      font-size: var(--text-secondary);
     }
     .sub-nav>li:nth-child(4){
       display: none;
