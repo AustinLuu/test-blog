@@ -14,11 +14,9 @@ const About = () => {
                         <li><a target="_blank"rel="noopener noreferrer" href="https://www.instagram.com/cafe__toast">/popup_cafe/cafe__toast</a></li>
                     </ul>
                     <br/>
-                    <p>Feel free to download my resumes:</p>
+                    <p>Feel free to download my resume:</p>
                     <ul className='sub-nav' style ={{display: "flex",flexDirection: "column",padding:"0.5em 0em 0em 1em",fontSize: "initial"}}>
-                        <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2024_ML.pdf">/machine_learning</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2024_SWE.pdf">/software</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2022_R.pdf">/robotics</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="/static/Austin_Luu_Resume_2026_SWE.pdf">/software</a> <span style={{fontSize: "0.8em", opacity: 0.6}}>(PDF)</span></li>
                     </ul>
                 </div>
 
